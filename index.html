@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedora Coin - The Gentleman's Cryptocurrency</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0046be 0%, #001f54 100%);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header {
+            padding: 4rem 0;
+        }
+
+        .logo {
+            margin-bottom: 2.5rem;
+            width: 100%;
+        }
+
+        .logo img {
+            max-width: 1000px; /* Increased from 800px to 1000px */
+            width: 100%; /* Increased from 90% to 100% */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 500px;
+            margin: 0 auto 2rem auto;
+            line-height: 2;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #0046be;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #FFD700;
+            color: #0046be;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 4rem;
+            opacity: 0.8;
+            font-size: 0.9rem;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .ca-section {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .ca-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+
+        .ca-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+
+        .ca-label {
+            font-size: 1.2rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .ca-number {
+            font-size: 1.2rem;
+            color: #ffffff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            text-align: center;
+        }
+
+        .copy-button {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+            margin-top: 0.5rem;
+        }
+
+        .copy-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            max-width: 800px;
+            margin: 2rem auto;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .disclaimer a {
+            color: white;
+            text-decoration: underline;
+            transition: opacity 0.2s;
+        }
+
+        .disclaimer a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="logo.png" alt="Fedora Logo">
+            </div>
+            <h1 class="tagline"> Unleash the Fedora Movement</h1>
+            <p class="description">Fedora isn't just a coin—it's a movement. Born from a passion for creativity and self-expression, $FEDORA is here to celebrate the quirks, ideas, and moments that make us extraordinary. Together, we've shaped trends, inspired connections, and sparked new ideas.<br><br>With this coin, we're not just honoring our past—we're building a future where innovation and individuality thrive. I've committed to keeping dev tokens untouched, and all proceeds will support X, a platform dedicated to amplifying voices and championing free expression.<br><br>Share your boldest ideas, your wildest creations, and your favorite moments with #fedoracoin.<br><br>Step into the future. Own the $FEDORA.</p>
+            <div class="buttons-container">
+                <a href="https://x.com/solferdora" class="cta-button">Join the Community</a>
+                <a href="https://pump.fun/board" class="buy-button">Buy Now</a>
+            </div>
+        </header>
+
+        <section class="ca-section">
+            <div class="ca-container">
+                <div class="ca-content">
+                    <span class="ca-label">CA:</span>
+                    <span class="ca-number">-</span>
+                </div>
+                <button class="copy-button" onclick="copyCA()">Copy</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="disclaimer">
+                Fedora coins are intended to function as an expression of support for, and engagement with, the ideals and beliefs embodied by the symbol "$FEDORA" and the associated artwork, and are not intended to be, or to be the subject of, an investment opportunity, investment contract, or security of any type. $FEDORA is not available to persons or entities in restricted jurisdictions. Users acknowledge that digital assets involve inherent risks and potential for complete loss. Nothing on this site constitutes financial, legal, or investment advice. See terms and conditions <a href="page2.html">here</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function copyCA() {
+            navigator.clipboard.writeText('ed839VVFFa6CD5zVJ7pB5vVfGTC5Ngiw5xXF86Qpump').then(() => {
+                alert('CA copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
